@@ -1,17 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import {SharedModule} from './shared/SharedModule';
-import { AppComponent } from './app.component';
-import { LoginPageComponent } from './views/login-page/login-page.component';
+//Modules
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { SharedModule } from "./shared/SharedModule";
+import { AppRoutingModule } from "./app-routing.module";
+// import { FlexLayoutModule } from "@angular/flex-layout";
+
+
+//Components
+import { AppComponent } from "./app.component";
+import { HomePageComponent } from "./views/home-page/home-page.component";
+import { LogOutComponent } from "./views/log-out/log-out.component";
+import { ResetPasswordComponent } from "./views/reset-password/reset-password.component";
+import { LoginPageComponent } from "./views/login-page/login-page.component";
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
+    LogOutComponent,
+    ResetPasswordComponent,
     LoginPageComponent
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule,
+    // FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
