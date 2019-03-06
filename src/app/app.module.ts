@@ -12,6 +12,8 @@ import { LogOutComponent } from "./views/log-out/log-out.component";
 import { ResetPasswordComponent } from "./views/reset-password/reset-password.component";
 import { PersonalInfoFormComponent } from './components/personal-info-form/personal-info-form.component';
 import { Error404Component } from './views/error404/error404.component';
+import { SideNavComponent } from './views/side-nav/side-nav.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { Error404Component } from './views/error404/error404.component';
     LogOutComponent,
     ResetPasswordComponent,
     PersonalInfoFormComponent,
-    Error404Component
+    Error404Component,
+    SideNavComponent,
+    NavBarComponent
   ],
   imports: [BrowserModule, SharedModule, AppRoutingModule, FlexLayoutModule],
   providers: [],
