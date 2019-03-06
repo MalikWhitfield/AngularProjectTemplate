@@ -1,0 +1,92 @@
+// theme will go here
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+
+$allata-purple: (
+    50 : #ede7f6,
+    100 : #d1c4e9,
+    200 : #b39ddb,
+    300 : #9575cd,
+    400 : #7e58c2,
+    500 : #673ab7,
+    600 : #5f34b0,
+    700 : #542ca7,
+    800 : #4a259f,
+    900 : #391890,
+    A100 : #d4c7ff,
+    A200 : #ad94ff,
+    A400 : #8661ff,
+    A700 : #7347ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$allata-red: (
+    50 : #ffeceb,
+    100 : #ffcfcc,
+    200 : #ffafaa,
+    300 : #fe8f88,
+    400 : #fe776f,
+    500 : #fe5f55,
+    600 : #fe574e,
+    700 : #fe4d44,
+    800 : #fe433b,
+    900 : #fd322a,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffd7d5,
+    A700 : #ffbebc,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+
+$my-app-primary: mat-palette($allata-purple);
+$my-app-accent: mat-palette($allata-red);
+$my-app-warn: mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);
+
+.alternate-theme {
+    $alternate-primary: mat-palette($allata-purple);
+    $alternate-accent: mat-palette($allata-red);
+    $alternate-warn: mat-palette($mat-deep-orange);
+    $alternate-theme: mat-light-theme(
+      $alternate-primary,
+      $alternate-accent,
+      $alternate-warn
+    );
+    @include angular-material-theme($alternate-theme);
+  }
