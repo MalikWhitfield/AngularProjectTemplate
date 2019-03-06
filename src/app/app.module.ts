@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {SharedModule} from './shared/SharedModule';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './views/login-page/login-page.component';
 
@@ -10,7 +10,8 @@ import { LoginPageComponent } from './views/login-page/login-page.component';
     LoginPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
