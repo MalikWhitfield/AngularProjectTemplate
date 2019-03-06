@@ -3,7 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { SharedModule } from "./shared/SharedModule";
 import { AppRoutingModule } from "./app-routing.module";
-// import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 //Components
@@ -25,7 +25,7 @@ import { LoginPageComponent } from "./views/login-page/login-page.component";
     BrowserModule,
     SharedModule,
     AppRoutingModule,
-    // FlexLayoutModule
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
