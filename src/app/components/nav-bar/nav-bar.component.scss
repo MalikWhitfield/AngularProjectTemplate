@@ -1,0 +1,12 @@
+mat-toolbar,
+mat-primary {
+  background-color: #2eaadc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-menu {
+  flex: 0;
+}
