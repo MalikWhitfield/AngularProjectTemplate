@@ -5,8 +5,7 @@ import { map } from "rxjs/operators";
 
 @Component({
   selector: "app-side-nav",
-  templateUrl: "./side-nav.component.html",
-  styleUrls: ["./side-nav.component.scss"]
+  templateUrl: "./side-nav.component.html"
 })
 export class SideNavComponent implements OnInit {
   isHandset$: Observable<boolean> = this.breakpointObserver

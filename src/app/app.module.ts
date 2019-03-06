@@ -10,10 +10,10 @@ import { AppComponent } from "./app.component";
 import { HomePageComponent } from "./views/home-page/home-page.component";
 import { LogOutComponent } from "./views/log-out/log-out.component";
 import { ResetPasswordComponent } from "./views/reset-password/reset-password.component";
-import { PersonalInfoFormComponent } from './components/personal-info-form/personal-info-form.component';
-import { Error404Component } from './views/error404/error404.component';
-import { SideNavComponent } from './views/side-nav/side-nav.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { PersonalInfoFormComponent } from "./components/personal-info-form/personal-info-form.component";
+import { Error404Component } from "./views/error404/error404.component";
+import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
+import { SideNavComponent } from "./components/side-nav/side-nav.component";
 
 @NgModule({
   declarations: [
