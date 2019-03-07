@@ -15,6 +15,7 @@ import { Error404Component } from "./views/error404/error404.component";
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 import { SideNavComponent } from "./components/side-nav/side-nav.component";
 import { LoginPageComponent } from "./views/login-page/login-page.component";
+import { RegisterPageComponent } from './views/register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginPageComponent } from "./views/login-page/login-page.component";
     PersonalInfoFormComponent,
     Error404Component,
     NavBarComponent,
-    SideNavComponent
+    SideNavComponent,
+    RegisterPageComponent
   ],
   imports: [BrowserModule, SharedModule, AppRoutingModule, FlexLayoutModule],
   providers: [],
