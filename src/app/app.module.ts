@@ -23,17 +23,12 @@ import { LoginPageComponent } from "./views/login-page/login-page.component";
     LogOutComponent,
     ResetPasswordComponent,
     LoginPageComponent,
-    PersonalInfoFormComponent
-  ],
-  imports: [
-    BrowserModule,
-    SharedModule,
-    AppRoutingModule,
-    FlexLayoutModule,
+    PersonalInfoFormComponent,
     Error404Component,
-    SideNavComponent,
-    NavBarComponent
+    NavBarComponent,
+    SideNavComponent
   ],
+  imports: [BrowserModule, SharedModule, AppRoutingModule, FlexLayoutModule],
   providers: [],
   bootstrap: [AppComponent]
 })
